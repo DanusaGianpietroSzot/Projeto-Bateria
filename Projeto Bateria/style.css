@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(248, 209, 245);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(138, 31, 238);
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.key {
+    width: 150px;
+    height: 120px;
+    border: 5px solid rgb(198, 52, 243);
+    color: rgb(126, 169, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    font-weight: bold;
+    
+}
+.key.active {
+    border: 5px solid #FF0;
+    color: #FF0;
+}
+
+.composer {
+    width: 260px;
+    margin-top: 20px;
+}
+.composer #input {
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    padding: 15px 10px;
+    border: 5px solid rgb(169, 60, 241);
+    font-weight: bold
+}
+
+.composer button {
+    width: 100%;
+    height: 60px;
+    background: none;
+    border: 5px solid rgb(169, 60, 241);
+    color: rgb(126, 169, 248);
+    font-size: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold
+}
+.composer button:hover {
+    background-color: rgba(9, 13, 240, 0.2);
+}
+
+footer {
+    margin-top: 20px;
+    color: rgb(206, 26, 241);
+    font-size: 13px;
+}
